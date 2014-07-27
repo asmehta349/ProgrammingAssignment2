@@ -1,6 +1,7 @@
-## The makeCacheMatrix function accepts a square (invertible) matrix and provides
-## various methods to set and return the elements of that matrix as well as save and return
-## the inverse of that matrix.
+## The makeCacheMatrix function creates an instance of a square (invertible) matrix
+## and providesvarious methods to set and return the elements of that matrix object
+##as well as save and return the inverse of that matrix object.
+ 
 ## The cacheSolve function uses the public functions of makeCacheMatrix function to calculate
 ## and return the inverse of a matrix provided by the user. If the inverse has already been
 ## calculated, then this function returns its cached value instead of recalculating the inverse.
@@ -37,7 +38,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-# cacheSolve takes a caching matrix created by makeCacheMatrix
+# cacheSolve takes an instance of a matrix created by makeCacheMatrix
 # and returns either the cached inverse of that matrix if the matrix
 # has not changed and the inverse was already calculated, or returns the
 # freshly calculated inverse and also caches it for future calls
